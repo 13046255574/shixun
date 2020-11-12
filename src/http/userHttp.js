@@ -12,6 +12,9 @@ export default {
     },
     delDynamic(dyId){
         return request.post(`/dynamic/deleteDynamic?dynamicId=${dyId}`)
+    },
+    findLogList(page){
+        return request.get(`/log/getLogsList?currentPage=${page}`);
     }
 
 }

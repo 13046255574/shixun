@@ -33,6 +33,11 @@ const routes = [
                 component: About
             },
             {
+                path:'/Log',
+                name:'Log',
+                component: () =>import('../views/Log.vue')
+            },
+            {
                 path: '*',
                 component: error
             }
